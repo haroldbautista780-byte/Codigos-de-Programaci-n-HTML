@@ -1,0 +1,169 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 1. Menú (nav) */
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-menu {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 4px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #cc0000;
+}
+
+/* 2. Cabecera (header) */
+header {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.titulo-principal {
+    color: #ff0000;
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* 3. Contenedor Principal (main) */
+main {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    gap: 20px;
+}
+
+/* Asides (Columnas Laterales) */
+.aside-left, .aside-right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-left {
+    background-color: #ffb6c1; /* Fondo rosa claro */
+    padding-top: 10px;
+}
+
+.opcion-red {
+    background-color: #ff0000;
+    color: white;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.aside-right {
+    background-color: #ffc0cb; /* Fondo rosa */
+}
+
+.aside-right .item-rosa {
+    background-color: #ffb6c1;
+    color: #cc0000;
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ffa07a;
+    font-size: 14px;
+}
+
+.bloque-rojo-vacio {
+    background-color: #ff0000;
+    flex: 1;
+    min-height: 100px;
+}
+
+/* Sección Central (section) */
+.section-center {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulo-seccion {
+    color: #ff0000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    background-color: #ffc0cb;
+    border: 2px solid #ffb6c1;
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #cc0000;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.form-group input {
+    border: 1.5px solid #ff0000;
+    border-radius: 12px;
+    padding: 4px 10px;
+    outline: none;
+    font-size: 12px;
+    color: #999999;
+}
+
+#btnEnviar {
+    background-color: #ffffff;
+    color: #cc0000;
+    border: 1.5px solid #ff0000;
+    border-radius: 12px;
+    padding: 3px 15px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#btnEnviar:hover {
+    background-color: #ffe6e6;
+}
+
+/* 4. Pie de página (footer) */
+footer {
+    background: linear-gradient(to right, #ff0000 0%, #ffcccc 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 6px 0;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}

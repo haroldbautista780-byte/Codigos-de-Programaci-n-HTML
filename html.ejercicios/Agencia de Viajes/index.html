@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Colombia</title>
+    <link rel="stylesheet" href="CSS/estilo.css ">
+</head>
+<body>
+
+    <header>
+        <h1>Viajes Colombia</h1>
+        <p>Descubre nuevos destinos</p>
+    </header>
+
+    <nav>
+        <a href="#destinos">Destinos</a>
+        <a href="#planes">Planes</a>
+        <a href="#reserva">Solicitar información</a>
+    </nav>
+
+    <main>
+        <section id="destinos">
+            <h2>Destinos turísticos</h2>
+            
+            <div class="destinos">
+                <article>
+                    <h3>Bogotá</h3>
+                    <p>Plan cultural y gastronómico.</p>
+                </article>
+
+                <article>
+                    <h3>Santa Marta</h3>
+                    <p>Playas, naturaleza y aventura.</p>
+                </article>
+
+                <article>
+                    <h3>Cartagena</h3>
+                    <p>Historia, playa y ciudad amurallada.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planes">
+            <h2>Planes</h2>
+
+            <table>
+                <caption>Precios por persona</caption>
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bogotá</td>
+                        <td>$300.000</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Marta</td>
+                        <td>$500.000</td>
+                    </tr>
+                    <tr>
+                        <td>Cartagena</td>
+                        <td>$600.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reserva">
+            <h2>Solicitar información</h2>
+
+            <form id="formViaje">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="destino">Destino:</label>
+                <select id="destino">
+                    <option value="">Seleccione</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Santa Marta">Santa Marta</option>
+                    <option value="Cartagena">Cartagena</option>
+                </select>
+
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" min="1">
+
+                <button type="submit">Calcular viaje</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viajes Colombia</p>
+    </footer>
+
+    <script src="JS/javascript.js"></script>
+</body>
+</html>

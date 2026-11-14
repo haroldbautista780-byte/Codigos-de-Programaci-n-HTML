@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Información</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Menú Superior (nav) -->
+    <nav>
+        <div class="menu-container">
+            <a href="#" class="btn-menu">Menu1</a>
+            <a href="#" class="btn-menu">Menu2</a>
+            <a href="#" class="btn-menu">Menu3</a>
+        </div>
+    </nav>
+
+    <!-- Cabecera (header) -->
+    <header>
+        <h1 class="titulo-principal">Sistema Informacion</h1>
+    </header>
+
+    <!-- Contenido Principal (main) -->
+    <main>
+        <!-- Columna Izquierda (aside) -->
+        <aside class="aside-left">
+            <div class="opcion-red">Opcion1</div>
+            <div class="opcion-red">Opcion2</div>
+            <div class="opcion-red">Opcion3</div>
+        </aside>
+
+        <!-- Sección Central (section) -->
+        <section class="section-center">
+            <h2 class="subtitulo-seccion">Datos del Cliente</h2>
+            
+            <div class="form-container">
+                <form id="clienteForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Escriba su nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.co" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" placeholder="333 444 5555" required>
+                    </div>
+
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Columna Derecha (aside) -->
+        <aside class="aside-right">
+            <div class="item-rosa">Producto1</div>
+            <div class="item-rosa">Promocion2</div>
+            <div class="item-rosa">Descuento3</div>
+            <div class="bloque-rojo-vacio"></div>
+        </aside>
+    </main>
+
+    <!-- Pie de página (footer) -->
+    <footer>
+        <p>Su nombre y apellido</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

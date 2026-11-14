@@ -1,0 +1,53 @@
+
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#111}
+  .todo{width:960px;max-width:96%;margin:18px auto 24px}
+
+  /* Menu de arriba */
+  .menu{text-align:center;margin:6px 0 8px}
+  .menu a{display:inline-block;background:#ff6a00;color:#000;font-weight:bold;font-size:14px;text-decoration:none;padding:5px 10px;margin:0 2px}
+  .menu a:hover{background:#000;color:#ff6a00}
+
+  /* Logo y titulo */
+  .cabeza{text-align:center}
+  .logo{width:86px;height:86px;object-fit:cover;border-radius:50%;border:3px solid #000;outline:3px solid #ff6a00;background:#ffe1cc}
+  h1{margin:2px 0 14px;font-family:Georgia,serif;font-size:58px;line-height:1;color:#ff6a00;text-shadow:3px 3px 0 #e8e8e8;letter-spacing:.5px}
+  h1 b{color:#000;font-weight:900}
+
+  /* Columnas */
+  .fila{display:flex;gap:12px;align-items:flex-start}
+  .izq{width:23%}
+  .cen{width:44%}
+  .der{width:33%}
+
+  .izq a{display:block;background:#ff6a00;color:#fff;text-decoration:none;font-weight:bold;font-size:15px;padding:13px 10px;margin-bottom:9px}
+  .izq a:hover{background:#000;color:#ff6a00}
+
+  /* Centro - formulario */
+  .cen{background:#ffe9d6;border:2px solid #ff6a00;text-align:center;padding:14px 12px 18px}
+  .cen h2{margin:2px 0 4px;color:#e65100;font-size:20px}
+  .saldo{display:inline-block;background:#000;color:#fff;font-size:13px;font-weight:bold;padding:6px 14px;border-radius:20px;margin:6px 0 12px}
+  .saldo i{color:#ff8a2a;font-style:normal}
+  label{display:block;font-size:14px;margin-top:9px}
+  input{width:72%;margin-top:3px;padding:6px 12px;border:2px solid #ff6a00;border-radius:20px;outline:none;font-size:13px;text-align:center;background:#fff}
+  input:focus{border-color:#000;background:#fff8f2}
+  .btn{margin-top:12px;background:#ff6a00;color:#000;border:2px solid #e65100;border-radius:20px;padding:5px 16px;font-weight:bold;cursor:pointer}
+  .btn:hover{background:#000;color:#ff6a00;border-color:#000}
+
+  /* Derecha */
+  .top{background:#000;height:28px;margin-bottom:9px}
+  .der a{display:block;background:#ffdcc0;color:#111;text-decoration:none;font-size:14px;padding:13px 10px;margin-bottom:9px;text-align:center}
+  .der a:hover{background:#ff6a00;color:#000;font-weight:bold}
+  .der a b{color:#e65100}
+
+  /* Pie */
+  .pie{background:#ff6a00;color:#000;text-align:center;font-size:13px;padding:8px;margin-top:10px}
+  .barra{background:#000;height:18px;margin-top:6px}
+
+  /* Celular */
+  @media(max-width:700px){
+    h1{font-size:36px}
+    .fila{display:block}
+    .izq,.cen,.der{width:100%;margin-bottom:12px}
+    input{width:88%}
+  }
